@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>MTS Course</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav id="navbar"></nav>
+	
+
+<!-- Body -->
+	<body>
+<div class="Content" style="max-width:2000px;margin-top:1%">
+
+<h1>Course</h1>
+<div class="body">
+<p>My first paragraph.</p>
+	</div>
+</div>
+</body>
+</html> 
+
+<script>
+  const navbar = document.getElementById("navbar");
+	
+	fetch("header.html")
+	.then(response => response.text())
+	.then(data => {
+		navbar.innerHTML = data;
+		console.log("Header Loaded")
+	});
+</script>
