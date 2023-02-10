@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> MTS Volunteer </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav id="navbar"></navbar>
+
+<!-- Body -->  
+<body>
+<div class="Content" style="max-width:2000px;margin-top:1%">
+<h1>Volunteers</h1>
+<div class="body">
+<p>
+  MTS isn't possible without the help of amazing volunteers. If you are interested in volunteering, 
+  please fill out the form below. <br>
+  Volunteers will receive a free volunteer T-Shirt and food on race morning for helping out.
+</p>
+  <br>
+<a href="https://forms.gle/MKzLmSMwiLPHhJtx9" class="link">Click here to sign up to volunteer!</a>
+<img src="images/VolunteerImage.jpg" alt="Volunteers Holding Kayak" style="width:60%;" class="center">
+<p>
+  There are a ton of supportive and fun positions available throughout the event. After signing up, 
+  our volunteer coordinator will contact you a week or two prior to the event (via email or phone) 
+  to discuss what positions and times work best for your schedule.
+  <br>
+  <br>
+  <br>
+  Here is a list of some of the many positions available throughout the event:
+  </p>
+  <ul>
+    <li>Registration</li>
+    <li>Aid Stations</li>
+    <li>Transition Area</li>
+    <li>Run Course</li>
+    <li>Bike Course</li>
+    <li>Check in</li>
+    <li>Finish Line</li>
+  </ul>
+  <p>
+  Nonprofit? We offer donation incentives for nonprofits that make a big showing!
+  Make this a party and let's have this event benefit our local community!
+  Email us at caitken@calpoly.edu to find out more!
+  </p>
+  <br>
+<a href="https://forms.gle/MKzLmSMwiLPHhJtx9" class="link">Click here to sign up to volunteer!</a>
+
+  </div>
+    </div> 
+  </body>
+</html> 
+  
+<scrpit>
+  const navbar = getElementById("navbar");
+  
+  fetch("header.html")
+    .then(response => response.txt())
+    .then(data => {
+      navbar.innerHTML = data;
+      console.log("Header Loaded")
+  });
+  
+  </script>

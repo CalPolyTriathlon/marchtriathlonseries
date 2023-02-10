@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>MTS Results</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<nav id="navbar"></nav>
+
+<body>
+<!-- Body -->
+<div class="Content" style="max-width:2000px;margin-top:1%">
+<h1>Results</h1><br>
+  <div class ="body">
+  <div class="flex-parent">
+  <div class = "flex-child">
+	<p>We will post results as soon as we have them for each year.<br> Thank you. <br><br>
+	<a href="https://timingevolution.com/march-triathlon-series-1" class="link">2022 Results</a>
+	</p>
+  </div>
+  <div class = "flex-child">
+	<img src="images/ResultsImage.jpg" alt="Racer Finishing" width="80%" padding="5px">
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+</html> 
+
+<scrpit>
+  const navbar = getElementById("navbar");
+  
+  fetch("header.html")
+    .then(response => response.txt())
+    .then(data => {
+      navbar.innerHTML = data;
+      console.log("Header Loaded")
+  });
+  
+  </script>
