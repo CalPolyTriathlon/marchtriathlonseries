@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr" lang="en" xmlns="https://www.marchtriathlonseries.com">
   <head>
+    <title>March Triathlon Series</title>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="The March Triathlon Series is the longest running collegiate triathlon in the West Coast. 
+	The event started as a senior project in 1998 and was held on campus at Cal Poly. 
+	Race participants joined from Cal Poly, Santa Barbara, and Cal Berkeley with a total of 15 racers. 
+	The spring race served as a..."/>
+    <meta name="keywords" content="Cal Poly, Triathlon, San Luis Obipso, March Triathlon Series, MTS"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/media/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/media/favicon-32x32.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>March Triathlon Series</title>
   </head>
   <body>
     <nav id="navbar"></nav>
@@ -48,15 +55,17 @@
         affordable gear, as well as discounted race entries and travel fees to
         collegiate races throughout California and to Collegiate Nationals. </p>
     </main>
-    <script>
+	  
+<script>
+	
 	const navbar = document.getElementById("navbar");
-  
-  fetch("header.html")
+  	fetch("header.html")
   	,then(response => response.text())
   	,then(data => {
     	navbar.innerHTML = data;
     	console.log("Header Loaded")
   });
+	
 </script>
   </body>
 </html>
